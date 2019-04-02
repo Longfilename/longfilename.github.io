@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>/src/components/site-nav</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./docs.css">
+  </head>
+  <body>
+    <div class="page">
+      <nav class="nav"><a class="nav-title">Design</a><a class="button nav-link" href="index.html">Colors</a><a class="button nav-link" href="design--fonts.html">Fonts</a>
+        <hr class="nav-divider"><a class="nav-title">Templates</a><a class="button nav-link" href="template__home.html"><i class="fa fa-file-text"></i> Homepage</a><a class="button nav-link" href="template__search-results.html"><i class="fa fa-file-text-o"></i> Search Results</a><a class="button nav-link" href="template__section.html"><i class="fa fa-file-text-o"></i> Section Landing Page</a><a class="button nav-link" href="template__story.html"><i class="fa fa-file-text-o"></i> Story Page</a>
+        <hr class="nav-divider"><a class="nav-title">Components</a><a class="button nav-link" href="component__card.html">card</a><a class="button nav-link" href="component__featured-stories.html">featured-stories</a><a class="button nav-link" href="component__grid.html"><i class="fa fa-th-large"></i> grid</a><a class="button nav-link" href="component__headline-grid.html">headline-grid</a><a class="button nav-link" href="component__headline-slideshow.html"><i class="fa fa-bolt"></i> headline-slideshow</a><a class="button nav-link" href="component__icons.html">icons</a><a class="button nav-link" href="component__page-footer.html">page-footer</a><a class="button nav-link" href="component__page-header.html">page-header</a><a class="button nav-link" href="component__photo-slideshow.html"><i class="fa fa-bolt"></i> photo-slideshow</a><a class="button nav-link" href="component__rich-text.html">rich-text</a><a class="button nav-link" href="component__search-results.html"><i class="fa fa-bolt"></i> search-results</a><a class="button nav-link" href="component__site-nav.html"><i class="fa fa-bars"></i> site-nav</a><a class="button nav-link" href="component__skip-nav.html"><i class="fa fa-bars"></i> skip-nav</a><a class="button nav-link" href="component__slat.html">slat</a><a class="button nav-link" href="component__slat-list.html">slat-list</a><a class="button nav-link" href="component__story.html">story</a><a class="button nav-link" href="component__story-image.html">story-image</a>
+      </nav>
+      <div class="page__frame">
+        <header class="page-header"><a class="button page-header__menu js__page"><i class="fa fa-bars" aria-hidden="true"></i>/src/components/site-nav</a></header>
+        <main class="page__content"> 
+          <article class="card">
+            <div class="card__content card__content--rich-text"><h1>Sitewide Navigation</h1>
+<p>The navigation for the site is housed off screen. Clicking on the “hamburger” menu will show the navigation panel. Within the nav are collections of accordions to show/hide long lists of links.</p>
+
+            </div>
+          </article>
+          <div class="card">
+            <div class="card__content card__content--component-head">
+              <h1 class="card__content-title">Site Nav</h1>
+            </div>
+            <div class="card__content card__content--component-view">
+              <div class="view-component">
+                <div class="view-component__loading">
+                  <p class="view-component__loading-text">loading</p>
+                </div>
+                <div class="view-component__loaded">
+                  <iframe class="view-component__iframe" data-src="iframe__site-nav--0.html" scrolling="no"></iframe>
+                </div>
+              </div>
+              <div class="resizer resizer--view-component"><a class="resizer-link resizer-link--xs" style="width: 480px;" data-resizer="480px"></a><a class="resizer-link resizer-link--sm" style="width: 672px;" data-resizer="672px"></a><a class="resizer-link resizer-link--md" style="width: 960px;" data-resizer="960px"></a><a class="resizer-link resizer-link--lg" style="width: 1248px;" data-resizer="1248px"></a><a class="resizer-link resizer-link--xl" style="width: 1536px;" data-resizer="1536px"></a><a class="resizer-link resizer-link--100 resizer-link--active" data-resizer="100%"></a></div>
+            </div>
+            <div class="card__content card__content--component-foot">
+              <div class="tabs">
+                <div class="tabs__nav"><a class="tabs__nav-link"><i class="fa fa-html5"></i> HTML</a><a class="tabs__nav-link"><i class="fa fa-code"></i> JSON</a><a class="tabs__nav-link"><i class="fa fa-bolt"></i> TypeScript</a><a class="tabs__nav-link"><i class="fa fa-css3"></i> SCSS</a>
+                </div>
+                <div class="tabs__content">
+                  <div class="tabs__content-tab">
+                    <pre class="language-html"><code class="language-html"><span class="token comment">&lt;!-- start `site-nav` component;--></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__button site-nav__button-icon site-nav__button-icon--open<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>icon-bars<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Open Site Navigation Panel<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../images/icons/icons.svg#icon-bars<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__drawer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__button site-nav__button-toggle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>Customer Service<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span> 
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>icon-angle-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../images/icons/icons.svg#icon-angle-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-sections<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>SITE INFORMATION<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Contact Us<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>About Us<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Store<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>RSS Feeds<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Special Sections<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>ADVERTISE<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Advertise with Us<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Media Kit<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>MOBILE<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Mobile Apps <span class="token entity" title="&amp;">&amp;amp;</span> eReaders<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Newsletters<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>SOCIAL<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Facebook<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Twitter<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Instagram<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>YouTube<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__button site-nav__button-toggle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>News<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span> 
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>icon-angle-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../images/icons/icons.svg#icon-angle-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-sections<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>SECTIONS<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>News<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Politics<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Weather<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>NATIONAL <span class="token entity" title="&amp;">&amp;amp;</span> WORLD<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>National<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>World<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Americas<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>LOCAL ISSUES<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Crime<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Education<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Environment<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Traffic<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__button site-nav__button-toggle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>Sports<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span> 
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>icon-angle-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../images/icons/icons.svg#icon-angle-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-sections<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>SECTIONS<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Sports<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Blogs <span class="token entity" title="&amp;">&amp;amp;</span> Columnists<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>PRO <span class="token entity" title="&amp;">&amp;amp;</span> COLLEGEs<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Miami Dolphins<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Miami Heat<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Miami Marlins<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Florida Panthers<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>College Sports<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>MORE SPORTS<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>High School Sports<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Auto Racing<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Fighting<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Golf<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Soccer<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Tennis<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__button site-nav__button-toggle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>Politics<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span> 
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>icon-angle-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../images/icons/icons.svg#icon-angle-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Politics<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Elections<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__button site-nav__button-toggle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>Business<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span> 
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>icon-angle-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../images/icons/icons.svg#icon-angle-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Business<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Banking<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>International Business<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Personal Finance<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Real Estate News<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__button site-nav__button-toggle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>Living<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span> 
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>icon-angle-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../images/icons/icons.svg#icon-angle-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-sections<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>SECTIONS<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Living<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Advice<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Fashion<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Health <span class="token entity" title="&amp;">&amp;amp;</span> Fitness<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Home <span class="token entity" title="&amp;">&amp;amp;</span> Garden<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Travel<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__button site-nav__button-toggle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>Entertainment<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span> 
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>icon-angle-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../images/icons/icons.svg#icon-angle-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-sections<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>SECTIONS<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Entertainment<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Books<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Games <span class="token entity" title="&amp;">&amp;amp;</span> Puzzles<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Movies<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Performing Arts<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__sub-section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>MORE ENTERTAINMENT<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__links<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Events Calendar<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Contests <span class="token entity" title="&amp;">&amp;amp;</span> Promotions<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-nav__button site-nav__button-icon site-nav__button-icon--close<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>icon-times<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Close Site Navigation Panel<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../images/icons/icons.svg#icon-times<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span>
+<span class="token comment">&lt;!-- end `site-nav` component; --></span></code></pre>
+                  </div>
+                  <div class="tabs__content-tab">
+                    <pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"sections"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Home"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Customer Service"</span><span class="token punctuation">,</span>
+      <span class="token property">"sections"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"SITE INFORMATION"</span><span class="token punctuation">,</span>
+          <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Contact Us"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"About Us"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Store"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"RSS Feeds"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Special Sections"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"ADVERTISE"</span><span class="token punctuation">,</span>
+          <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Advertise with Us"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Media Kit"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"MOBILE"</span><span class="token punctuation">,</span>
+          <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Mobile Apps &amp; eReaders"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Newsletters"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"SOCIAL"</span><span class="token punctuation">,</span>
+          <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Facebook"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Twitter"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Instagram"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"YouTube"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"News"</span><span class="token punctuation">,</span>
+      <span class="token property">"sections"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"SECTIONS"</span><span class="token punctuation">,</span>
+          <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"News"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Politics"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Weather"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"NATIONAL &amp; WORLD"</span><span class="token punctuation">,</span>
+          <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"National"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"World"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Americas"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"LOCAL ISSUES"</span><span class="token punctuation">,</span>
+          <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Crime"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Education"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Environment"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Traffic"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Sports"</span><span class="token punctuation">,</span>
+      <span class="token property">"sections"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"SECTIONS"</span><span class="token punctuation">,</span>
+          <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Sports"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Blogs &amp; Columnists"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"PRO &amp; COLLEGEs"</span><span class="token punctuation">,</span>
+          <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Miami Dolphins"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Miami Heat"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Miami Marlins"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Florida Panthers"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"College Sports"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"MORE SPORTS"</span><span class="token punctuation">,</span>
+          <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"High School Sports"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Auto Racing"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Fighting"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Golf"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Soccer"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Tennis"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Politics"</span><span class="token punctuation">,</span>
+      <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Politics"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Elections"</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Business"</span><span class="token punctuation">,</span>
+      <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Business"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Banking"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"International Business"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Personal Finance"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Real Estate News"</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Living"</span><span class="token punctuation">,</span>
+      <span class="token property">"sections"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"SECTIONS"</span><span class="token punctuation">,</span>
+          <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Living"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Advice"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Fashion"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Health &amp; Fitness"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Home &amp; Garden"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Travel"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Entertainment"</span><span class="token punctuation">,</span>
+      <span class="token property">"sections"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"SECTIONS"</span><span class="token punctuation">,</span>
+          <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Entertainment"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Books"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Games &amp; Puzzles"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Movies"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Performing Arts"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"MORE ENTERTAINMENT"</span><span class="token punctuation">,</span>
+          <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Events Calendar"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"#"</span><span class="token punctuation">,</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Contests &amp; Promotions"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                  </div>
+                  <div class="tabs__content-tab">
+                    <pre class="language-typescript"><code class="language-typescript"><span class="token function">jQuery</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">$<span class="token punctuation">:</span> JQueryStatic</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> $drawer <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.site-nav__drawer'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> drawerVisibleClass <span class="token operator">=</span> <span class="token string">'site-nav__drawer--show'</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> sectionVisibleClass <span class="token operator">=</span> <span class="token string">'site-nav__section--show'</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// stop clicks within the nav from closing the nav (click event on the body);</span>
+  <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.site-nav__drawer'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">:</span> Event</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    event<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.site-nav__button-toggle'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">:</span> Event</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">$</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>currentTarget<span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">parent</span><span class="token punctuation">(</span><span class="token string">'.site-nav__section'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">toggleClass</span><span class="token punctuation">(</span>sectionVisibleClass<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.site-nav__button-icon--open'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">:</span> Event</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    $drawer<span class="token punctuation">.</span><span class="token function">addClass</span><span class="token punctuation">(</span>drawerVisibleClass<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    event<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body, .site-nav__button-icon--close'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    $drawer<span class="token punctuation">.</span><span class="token function">removeClass</span><span class="token punctuation">(</span>drawerVisibleClass<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                  </div>
+                  <div class="tabs__content-tab">
+                    <pre class="language-scss"><code class="language-scss"><span class="token property"><span class="token variable">$paddingWithBottomBorder</span></span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>0.5<span class="token punctuation">)</span> <span class="token operator">-</span> 1px <span class="token function">size</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span> <span class="token function">size</span><span class="token punctuation">(</span>0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token selector">.site-nav </span><span class="token punctuation">{</span>
+  <span class="token selector">a </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$color__textLight</span><span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token variable">$paddingWithBottomBorder</span><span class="token punctuation">;</span>
+    <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token property">border-top</span><span class="token punctuation">:</span> 1px solid <span class="token variable">$color__highlightDark</span><span class="token punctuation">;</span>
+    <span class="token property">padding-left</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> color <span class="token variable">$duration__color</span><span class="token punctuation">;</span>
+
+    <span class="token selector"><span class="token parent important">&amp;</span>:hover,
+    <span class="token parent important">&amp;</span>:focus </span><span class="token punctuation">{</span>
+      <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$color__highlightDark</span><span class="token punctuation">;</span>
+      <span class="token property">text-decoration</span><span class="token punctuation">:</span> underline<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">p </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$color__textLight</span><span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> 500<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token variable">$paddingWithBottomBorder</span><span class="token punctuation">;</span>
+    <span class="token property">border-top</span><span class="token punctuation">:</span> 1px solid <span class="token variable">$color__highlightDark</span><span class="token punctuation">;</span>
+    <span class="token property">padding-left</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>1.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector"><span class="token parent important">&amp;</span>__skip </span><span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$color__highlightLight</span><span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 24px<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> 24px<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 72px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// panel/drawer of navigation that appears from off-left;</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>__drawer </span><span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">z-index</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+    <span class="token property">outline</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> transform 0.5s ease-in-out<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>11<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-120%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token variable">$color__backgroundDark</span><span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>4<span class="token punctuation">)</span> 0 <span class="token function">size</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">overflow-x</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+
+    <span class="token selector"><span class="token parent important">&amp;</span>:after </span><span class="token punctuation">{</span>
+      <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+      <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token variable">$color__highlightDark</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector"><span class="token parent important">&amp;</span>--show </span><span class="token punctuation">{</span>
+      <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// list of links, nested within a section, or subsection;</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>__links </span><span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// heading with links;</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>__sub-sections </span><span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// make buttons appear to be links;</span>
+  <span class="token comment">// all buttons trigger an action, they dont take the user to a new URL;</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>__button </span><span class="token punctuation">{</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$color__textLight</span><span class="token punctuation">;</span>
+    <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token variable">$line-height__medium</span><span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> color <span class="token variable">$duration__color</span><span class="token punctuation">;</span>
+
+    <span class="token selector"><span class="token parent important">&amp;</span>:hover,
+    <span class="token parent important">&amp;</span>:focus </span><span class="token punctuation">{</span>
+      <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$color__highlightDark</span><span class="token punctuation">;</span>
+      <span class="token property">text-decoration</span><span class="token punctuation">:</span> underline<span class="token punctuation">;</span>
+
+      <span class="token selector">svg </span><span class="token punctuation">{</span>
+        <span class="token property">fill</span><span class="token punctuation">:</span> <span class="token variable">$color__highlightDark</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// navigation open/close icon buttons;</span>
+    <span class="token selector"><span class="token parent important">&amp;</span>-icon </span><span class="token punctuation">{</span>
+      <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+
+      <span class="token selector">svg </span><span class="token punctuation">{</span>
+        <span class="token property">transition</span><span class="token punctuation">:</span> fill <span class="token variable">$duration__color</span><span class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token selector"><span class="token parent important">&amp;</span>--open </span><span class="token punctuation">{</span>
+        <span class="token property">top</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>1.25<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">left</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>1.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>1.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token selector"><span class="token parent important">&amp;</span>--close </span><span class="token punctuation">{</span>
+        <span class="token property">top</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">right</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// icon looks a little off center at this size, move it up a pixel to fix;</span>
+        <span class="token selector">svg </span><span class="token punctuation">{</span>
+          <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+          <span class="token property">top</span><span class="token punctuation">:</span> -1px<span class="token punctuation">;</span>
+          <span class="token property">left</span><span class="token punctuation">:</span> -1px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector"><span class="token parent important">&amp;</span>-toggle </span><span class="token punctuation">{</span>
+      <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token variable">$paddingWithBottomBorder</span><span class="token punctuation">;</span>
+      <span class="token property">text-align</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+      <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+      <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+      <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+      <span class="token property">border-top</span><span class="token punctuation">:</span> 1px solid <span class="token variable">$color__highlightDark</span><span class="token punctuation">;</span>
+
+      <span class="token selector">span </span><span class="token punctuation">{</span>
+        <span class="token property">flex-grow</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token selector">svg </span><span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">fill</span><span class="token punctuation">:</span> <span class="token variable">$color__textLight</span><span class="token punctuation">;</span>
+        <span class="token property">transition</span><span class="token punctuation">:</span> transform 0.5s ease-out<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// top level grouping of links;</span>
+  <span class="token comment">// may contain one, may contain a list, may contain a list with headings;</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>__section </span><span class="token punctuation">{</span>
+    <span class="token comment">// home link is the only A that isn't nested;</span>
+    <span class="token comment">// make it appear to be a button;</span>
+    &amp;<span class="token punctuation">:</span><span class="token function">nth-of-type</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span> <span class="token selector">a </span><span class="token punctuation">{</span>
+      <span class="token property">padding-left</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector"><span class="token parent important">&amp;</span>--show </span><span class="token punctuation">{</span>
+      <span class="token selector">.site-nav__links,
+      .site-nav__sub-sections </span><span class="token punctuation">{</span>
+        <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token selector">.site-nav__button-toggle </span><span class="token punctuation">{</span>
+        <span class="token selector">svg </span><span class="token punctuation">{</span>
+          <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>180deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="./docs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>/src/components/skip-nav</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./docs.css">
+  </head>
+  <body>
+    <div class="page">
+      <nav class="nav"><a class="nav-title">Design</a><a class="button nav-link" href="index.html">Colors</a><a class="button nav-link" href="design--fonts.html">Fonts</a>
+        <hr class="nav-divider"><a class="nav-title">Templates</a><a class="button nav-link" href="template__home.html"><i class="fa fa-file-text"></i> Homepage</a><a class="button nav-link" href="template__search-results.html"><i class="fa fa-file-text-o"></i> Search Results</a><a class="button nav-link" href="template__section.html"><i class="fa fa-file-text-o"></i> Section Landing Page</a><a class="button nav-link" href="template__story.html"><i class="fa fa-file-text-o"></i> Story Page</a>
+        <hr class="nav-divider"><a class="nav-title">Components</a><a class="button nav-link" href="component__card.html">card</a><a class="button nav-link" href="component__featured-stories.html">featured-stories</a><a class="button nav-link" href="component__grid.html"><i class="fa fa-th-large"></i> grid</a><a class="button nav-link" href="component__headline-grid.html">headline-grid</a><a class="button nav-link" href="component__headline-slideshow.html"><i class="fa fa-bolt"></i> headline-slideshow</a><a class="button nav-link" href="component__icons.html">icons</a><a class="button nav-link" href="component__page-footer.html">page-footer</a><a class="button nav-link" href="component__page-header.html">page-header</a><a class="button nav-link" href="component__photo-slideshow.html"><i class="fa fa-bolt"></i> photo-slideshow</a><a class="button nav-link" href="component__rich-text.html">rich-text</a><a class="button nav-link" href="component__search-results.html"><i class="fa fa-bolt"></i> search-results</a><a class="button nav-link" href="component__site-nav.html"><i class="fa fa-bars"></i> site-nav</a><a class="button nav-link" href="component__skip-nav.html"><i class="fa fa-bars"></i> skip-nav</a><a class="button nav-link" href="component__slat.html">slat</a><a class="button nav-link" href="component__slat-list.html">slat-list</a><a class="button nav-link" href="component__story.html">story</a><a class="button nav-link" href="component__story-image.html">story-image</a>
+      </nav>
+      <div class="page__frame">
+        <header class="page-header"><a class="button page-header__menu js__page"><i class="fa fa-bars" aria-hidden="true"></i>/src/components/skip-nav</a></header>
+        <main class="page__content"> 
+          <article class="card">
+            <div class="card__content card__content--rich-text"><h1>Skip Navigation Link</h1>
+<p>This component is only visible when it has focus. Put focus into the <code>&lt;iframe&gt;</code> below and press the tab key, that will put focus on the element, therefore making it visible. The intention is to allow keyboard users to quickly tab over repeative content — <code>&lt;header&gt;</code> and <code>&lt;nav&gt;</code> — present on every page.</p>
+<p>This component relys upon the target element to have an id of <code>#main</code>. It is currently pointing to the <code>&lt;main&gt;</code> tag on on the page.</p>
+<p>See <a href="https://webaim.org/techniques/skipnav/">webaim.org</a> for more information about this approach.</p>
+
+            </div>
+          </article>
+          <div class="card">
+            <div class="card__content card__content--component-head">
+              <h1 class="card__content-title">skip-nav</h1>
+            </div>
+            <div class="card__content card__content--component-view">
+              <div class="view-component">
+                <div class="view-component__loading">
+                  <p class="view-component__loading-text">loading</p>
+                </div>
+                <div class="view-component__loaded">
+                  <iframe class="view-component__iframe" data-src="iframe__skip-nav--0.html" scrolling="no"></iframe>
+                </div>
+              </div>
+              <div class="resizer resizer--view-component"><a class="resizer-link resizer-link--xs" style="width: 480px;" data-resizer="480px"></a><a class="resizer-link resizer-link--sm" style="width: 672px;" data-resizer="672px"></a><a class="resizer-link resizer-link--md" style="width: 960px;" data-resizer="960px"></a><a class="resizer-link resizer-link--lg" style="width: 1248px;" data-resizer="1248px"></a><a class="resizer-link resizer-link--xl" style="width: 1536px;" data-resizer="1536px"></a><a class="resizer-link resizer-link--100 resizer-link--active" data-resizer="100%"></a></div>
+            </div>
+            <div class="card__content card__content--component-foot">
+              <div class="tabs">
+                <div class="tabs__nav"><a class="tabs__nav-link"><i class="fa fa-html5"></i> HTML</a><a class="tabs__nav-link"><i class="fa fa-css3"></i> SCSS</a>
+                </div>
+                <div class="tabs__content">
+                  <div class="tabs__content-tab">
+                    <pre class="language-html"><code class="language-html"><span class="token comment">&lt;!-- start `skip-nav` component; --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>skip-nav<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#main<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Skip to main content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span>
+<span class="token comment">&lt;!-- end `skip-nav` component; --></span></code></pre>
+                  </div>
+                  <div class="tabs__content-tab">
+                    <pre class="language-scss"><code class="language-scss"><span class="token selector">.skip-nav </span><span class="token punctuation">{</span>
+  <span class="token selector">a </span><span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> -1000px<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> -1000px<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token variable">$color__backgroundDark</span><span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$color__highlightDark</span><span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token variable">$font-size__small</span><span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> 700<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token variable">$line-height__medium</span><span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>0.25<span class="token punctuation">)</span> <span class="token function">size</span><span class="token punctuation">(</span>0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token property">text-transform</span><span class="token punctuation">:</span> uppercase<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>7<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// on small devices cover the logo completely;</span>
+    <span class="token comment">// visually this is better than just covering part of it;</span>
+    <span class="token selector"><span class="token parent important">&amp;</span>:focus </span><span class="token punctuation">{</span>
+      <span class="token property">top</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>1.25<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token property">left</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+      <span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>-3.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token property">outline</span><span class="token punctuation">:</span> 1px solid <span class="token variable">$color__highlightDark</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// once we have enough horizontal space that the link won't overlap the logo;</span>
+      <span class="token comment">// push it to the left, next to the hamburger link;</span>
+      <span class="token keyword">@include</span> <span class="token function">breakpoint</span><span class="token punctuation">(</span><span class="token variable">$breakpoint--sm</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token property">top</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>1.25<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">left</span><span class="token punctuation">:</span> <span class="token function">size</span><span class="token punctuation">(</span>3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">margin-left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="./docs.js"></script>
+  </body>
+</html>
