@@ -163,13 +163,21 @@ h3::before {
 
 /* screenshots */
 .links {
-  display: flex;
   list-style: none;
   margin-left: 0;
 }
 .links li {
   width: 192px;
-  margin-right: 24px;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .links {
+    display: flex;
+  }
+  .links li {
+    margin-bottom: 0;
+    margin-right: 24px;
+  }
 }
 .links img {
   width: 192px;
