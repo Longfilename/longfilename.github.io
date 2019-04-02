@@ -19,39 +19,605 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="">
     <meta property="og:description" content="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,500,700">
   </head>
   <body>
     <!-- start `skip-nav` component; -->
-    <div class="skip-nav">
-      <p>skip-nav</p>
-    </div>
+    <nav class="skip-nav"><a href="#main">Skip to main content</a></nav>
     <!-- end `skip-nav` component; -->
-    <!-- start `page-header` component; -->
-    <div class="page-header">
-      <p>page-header</p>
-    </div>
+    <!-- start `page-header` component;-->
+    <header class="page-header">
+      <div class="page-header__banner">
+        <div class="page-header__logo"><img src="../images/page-header/acme__logo.png" alt="ACME Logo"></div>
+        <nav class="page-header__tabs d-none d-sm-block"><a href="#">Home</a><a href="#">News</a><a href="#">Sports</a><a href="#">Business</a><a href="#">Real Estate</a>
+        </nav>
+      </div>
+    </header>
     <!-- end `page-header` component; -->
-    <!-- start `site-nav` component; -->
-    <div class="site-nav">
-      <p>site-nav</p>
-    </div>
+    <!-- start `site-nav` component;-->
+    <nav class="site-nav">
+      <button class="site-nav__button site-nav__button-icon site-nav__button-icon--open">
+        <svg class="icon-bars">
+          <title>Open Site Navigation Panel</title>
+          <use xlink:href="../images/icons/icons.svg#icon-bars"></use>
+        </svg>
+      </button>
+      <nav class="site-nav__drawer">
+        <div class="site-nav__section"><a href="#">Home</a>
+        </div>
+        <div class="site-nav__section">
+          <button class="site-nav__button site-nav__button-toggle"><span>Customer Service</span>
+            <svg class="icon-angle-down">
+              <use xlink:href="../images/icons/icons.svg#icon-angle-down"></use>
+            </svg>
+          </button>
+          <div class="site-nav__sub-sections">
+            <div class="site-nav__sub-section">
+              <p>SITE INFORMATION</p>
+              <div class="site-nav__links"><a href="#">Contact Us</a><a href="#">About Us</a><a href="#">Store</a><a href="#">RSS Feeds</a><a href="#">Special Sections</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>ADVERTISE</p>
+              <div class="site-nav__links"><a href="#">Advertise with Us</a><a href="#">Media Kit</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>MOBILE</p>
+              <div class="site-nav__links"><a href="#">Mobile Apps &amp; eReaders</a><a href="#">Newsletters</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>SOCIAL</p>
+              <div class="site-nav__links"><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">Instagram</a><a href="#">YouTube</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-nav__section">
+          <button class="site-nav__button site-nav__button-toggle"><span>News</span>
+            <svg class="icon-angle-down">
+              <use xlink:href="../images/icons/icons.svg#icon-angle-down"></use>
+            </svg>
+          </button>
+          <div class="site-nav__sub-sections">
+            <div class="site-nav__sub-section">
+              <p>SECTIONS</p>
+              <div class="site-nav__links"><a href="#">News</a><a href="#">Politics</a><a href="#">Weather</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>NATIONAL &amp; WORLD</p>
+              <div class="site-nav__links"><a href="#">National</a><a href="#">World</a><a href="#">Americas</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>LOCAL ISSUES</p>
+              <div class="site-nav__links"><a href="#">Crime</a><a href="#">Education</a><a href="#">Environment</a><a href="#">Traffic</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-nav__section">
+          <button class="site-nav__button site-nav__button-toggle"><span>Sports</span>
+            <svg class="icon-angle-down">
+              <use xlink:href="../images/icons/icons.svg#icon-angle-down"></use>
+            </svg>
+          </button>
+          <div class="site-nav__sub-sections">
+            <div class="site-nav__sub-section">
+              <p>SECTIONS</p>
+              <div class="site-nav__links"><a href="#">Sports</a><a href="#">Blogs &amp; Columnists</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>PRO &amp; COLLEGEs</p>
+              <div class="site-nav__links"><a href="#">Miami Dolphins</a><a href="#">Miami Heat</a><a href="#">Miami Marlins</a><a href="#">Florida Panthers</a><a href="#">College Sports</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>MORE SPORTS</p>
+              <div class="site-nav__links"><a href="#">High School Sports</a><a href="#">Auto Racing</a><a href="#">Fighting</a><a href="#">Golf</a><a href="#">Soccer</a><a href="#">Tennis</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-nav__section">
+          <button class="site-nav__button site-nav__button-toggle"><span>Politics</span>
+            <svg class="icon-angle-down">
+              <use xlink:href="../images/icons/icons.svg#icon-angle-down"></use>
+            </svg>
+          </button>
+          <div class="site-nav__links"><a href="#">Politics</a><a href="#">Elections</a>
+          </div>
+        </div>
+        <div class="site-nav__section">
+          <button class="site-nav__button site-nav__button-toggle"><span>Business</span>
+            <svg class="icon-angle-down">
+              <use xlink:href="../images/icons/icons.svg#icon-angle-down"></use>
+            </svg>
+          </button>
+          <div class="site-nav__links"><a href="#">Business</a><a href="#">Banking</a><a href="#">International Business</a><a href="#">Personal Finance</a><a href="#">Real Estate News</a>
+          </div>
+        </div>
+        <div class="site-nav__section">
+          <button class="site-nav__button site-nav__button-toggle"><span>Living</span>
+            <svg class="icon-angle-down">
+              <use xlink:href="../images/icons/icons.svg#icon-angle-down"></use>
+            </svg>
+          </button>
+          <div class="site-nav__sub-sections">
+            <div class="site-nav__sub-section">
+              <p>SECTIONS</p>
+              <div class="site-nav__links"><a href="#">Living</a><a href="#">Advice</a><a href="#">Fashion</a><a href="#">Health &amp; Fitness</a><a href="#">Home &amp; Garden</a><a href="#">Travel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-nav__section">
+          <button class="site-nav__button site-nav__button-toggle"><span>Entertainment</span>
+            <svg class="icon-angle-down">
+              <use xlink:href="../images/icons/icons.svg#icon-angle-down"></use>
+            </svg>
+          </button>
+          <div class="site-nav__sub-sections">
+            <div class="site-nav__sub-section">
+              <p>SECTIONS</p>
+              <div class="site-nav__links"><a href="#">Entertainment</a><a href="#">Books</a><a href="#">Games &amp; Puzzles</a><a href="#">Movies</a><a href="#">Performing Arts</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>MORE ENTERTAINMENT</p>
+              <div class="site-nav__links"><a href="#">Events Calendar</a><a href="#">Contests &amp; Promotions</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="site-nav__button site-nav__button-icon site-nav__button-icon--close">
+          <svg class="icon-times">
+            <title>Close Site Navigation Panel</title>
+            <use xlink:href="../images/icons/icons.svg#icon-times"></use>
+          </svg>
+        </button>
+      </nav>
+    </nav>
     <!-- end `site-nav` component; -->
-    <!-- start `featured-stories` component; -->
-    <div class="featured-stories">
-      <p>featured-stories</p>
-    </div>
-    <!-- end `featured-stories` component; -->
-    <!-- start `headline-slideshow` component; -->
-    <div class="headline-slideshow">
-      <p>headline-slideshow</p>
-    </div>
-    <!-- end `headline-slideshow` component; -->
+    <main class="container" id="main">
+      <!-- start `featured-stories` component; -->
+      <div class="featured-stories">
+        <div class="row">
+          <div class="col-lg-6 col-md-8">
+            <!-- start `card` component; -->
+            <article class="card card--overlay card--featured-large"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/720x540" alt="empty placeholder image"></div>
+                <h1>Pellentesque in ligula et ante lobortis auctor nulla dictum mauris sit amet</h1></a></article>
+            <!-- end `card` component; -->
+          </div>
+          <div class="col-lg-2 d-none d-lg-block">
+            <!-- start `card` component; -->
+            <article class="card card--overlay card--featured-small d-none d-md-block"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/216x162" alt="empty placeholder image"></div>
+                <h2>In ornare diam sit amet consectetur</h2></a></article>
+            <!-- end `card` component; -->
+            <!-- start `card` component; -->
+            <article class="card card--overlay card--featured-small d-none d-md-block"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/216x162" alt="empty placeholder image"></div>
+                <h2>Cras tincidunt est eget leo elementum auctor</h2></a></article>
+            <!-- end `card` component; -->
+            <!-- start `card` component; -->
+            <article class="card card--overlay card--featured-small d-none d-md-block"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/216x162" alt="empty placeholder image"></div>
+                <h2>Integer id ipsum vel lect tempus faucibus</h2></a></article>
+            <!-- end `card` component; -->
+          </div>
+          <div class="col-md-4">
+            <section class="featured-stories__top"><br class="d-md-none">
+              <h2>Top Stories</h2><a class="d-lg-none" href="#">In ornare diam sit amet consectetur</a><a class="d-lg-none" href="#">Cras tincidunt est eget leo elementum auctor</a><a class="d-lg-none" href="#">Integer id ipsum vel lect tempus faucibus</a><a href="#">Quisque volutpat purus non mi volutpat, quis gravida urna malesuada</a><a href="#">Morbi aliquam ligula a tellus fermentum, sed faucibus dolor dignissim</a><a href="#">Duis eget ligula eu eros congue sollicitudin ac a arcu</a><a href="#">Mauris non magna ac leo faucibus malesuada</a><a href="#">Nulla euismod tellus vitae massa dictum, ut pellentesque mauris pulvinar</a><a href="#">Maecenas sit amet enim quis risus ultricies bibendum</a><a href="#">Ut volutpat ipsum at nisl maximus, a fermentum arcu condimentum</a><a href="#">Nunc ornare nunc vitae leo tristique dapibus</a><a href="#">Cras viverra justo ut congue efficitur</a><a href="#">Vivamus nec felis posuere, finibus lectus sit amet, fermentum magna</a><a href="#">Nunc accumsan tortor vitae dolor gravida, sit amet iaculis urna tincidunt</a><a href="#">Aenean sodales neque nec arcu iaculis finibus</a><a class="d-md-none d-lg-block" href="#">Phasellus consectetur orci et risus lobortis, ac egestas arcu interdum</a><a class="d-md-none d-lg-block" href="#">Mauris ultrices lorem at diam interdum, in porttitor velit tempus</a><a class="d-md-none d-lg-block" href="#">Nulla ut metus et nisl feugiat lacinia</a>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!-- end `featured-stories` component; -->
+      <!-- start `headline-slideshow` component; -->
+      <section class="headline-slideshow">
+        <header>
+          <h2>Entertainment</h2>
+          <nav class="d-sm-inline"><a href="#">Celebrity</a><a href="#">TV</a><a href="#">Movies</a><a href="#">Music</a><a href="#">Games</a>
+          </nav>
+        </header>
+        <div class="headline-slideshow__slides">
+          <div class="headline-slideshow__slide">
+            <!-- start `slat-list` component; -->
+            <section class="slat-list">
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Proin tristique urna vitae ipsum mollis viverra</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Etiam luctus tellus non ipsum bibendum</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Nullam faucibus turpis eu hendrerit accumsan</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+            </section>
+            <!-- end `slat-list` component; -->
+          </div>
+          <div class="headline-slideshow__slide">
+            <!-- start `card` component; -->
+            <article class="card card--stacked"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/336x192" alt="empty placeholder image"></div>
+                <h3>Aenean sit amet felis sed quam tincidunt interdum</h3></a></article>
+            <!-- end `card` component; -->
+          </div>
+          <div class="headline-slideshow__slide">
+            <!-- start `card` component; -->
+            <article class="card card--stacked"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/336x192" alt="empty placeholder image"></div>
+                <h3>Pellentesque ornare lorem vel mi auctor hendrerit</h3></a></article>
+            <!-- end `card` component; -->
+          </div>
+          <div class="headline-slideshow__slide">
+            <!-- start `slat-list` component; -->
+            <section class="slat-list">
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Vivamus molestie nulla a posuere dictum</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Suspendisse at lacus non lacus dapibus</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Nulla a sapien ut urna hendrerit sceler</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+            </section>
+            <!-- end `slat-list` component; -->
+          </div>
+        </div>
+      </section>
+      <!-- end `headline-slideshow` component; -->
+      <!-- start `headline-slideshow` component; -->
+      <section class="headline-slideshow">
+        <header>
+          <h2>Health &amp; Fitness</h2>
+          <nav class="d-sm-inline"><a href="#">Health News</a><a href="#">Weight Loss</a><a href="#">Fitness</a><a href="#">Nutrition</a><a href="#">Medical</a>
+          </nav>
+        </header>
+        <div class="headline-slideshow__slides">
+          <div class="headline-slideshow__slide">
+            <!-- start `slat-list` component; -->
+            <section class="slat-list">
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Nam pharetra diam ac orci laoreet feugiat</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Maecenas sed lectus id ante finibus</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Donec aliquam lorem et nibh ultrices fermentum</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+            </section>
+            <!-- end `slat-list` component; -->
+          </div>
+          <div class="headline-slideshow__slide">
+            <!-- start `card` component; -->
+            <article class="card card--stacked"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/336x192" alt="empty placeholder image"></div>
+                <h3>Mauris fringilla neque ac massa consectetur aliquam</h3></a></article>
+            <!-- end `card` component; -->
+          </div>
+          <div class="headline-slideshow__slide">
+            <!-- start `slat-list` component; -->
+            <section class="slat-list">
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Phasellus eget odio dignissim justo varius</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Vestibulum ut orci sit amet nunc accumsan</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Quisque facilisis tellus vitae mauris venen</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+            </section>
+            <!-- end `slat-list` component; -->
+          </div>
+          <div class="headline-slideshow__slide">
+            <!-- start `card` component; -->
+            <article class="card card--stacked"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/336x192" alt="empty placeholder image"></div>
+                <h3>Nulla sed orci condimentum, condimentum est imperdiet, interdum ligula</h3></a></article>
+            <!-- end `card` component; -->
+          </div>
+        </div>
+      </section>
+      <!-- end `headline-slideshow` component; -->
+      <!-- start `headline-slideshow` component; -->
+      <section class="headline-slideshow">
+        <header>
+          <h2>Lifestyle</h2>
+          <nav class="d-sm-inline"><a href="#">Royals</a><a href="#">Advice</a><a href="#">Style</a><a href="#">Horoscopes</a><a href="#">Home &amp; Garden</a>
+          </nav>
+        </header>
+        <div class="headline-slideshow__slides">
+          <div class="headline-slideshow__slide">
+            <!-- start `card` component; -->
+            <article class="card card--stacked"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/336x192" alt="empty placeholder image"></div>
+                <h3>Phasellus accumsan lectus quis pretium rutrum</h3></a></article>
+            <!-- end `card` component; -->
+          </div>
+          <div class="headline-slideshow__slide">
+            <!-- start `slat-list` component; -->
+            <section class="slat-list">
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Morbi id metus ac nibh dapibus lacinia</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Nullam in erat sed urna maximus conse</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Vivamus in sem tincidunt volutpat nisl</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+            </section>
+            <!-- end `slat-list` component; -->
+          </div>
+          <div class="headline-slideshow__slide">
+            <!-- start `slat-list` component; -->
+            <section class="slat-list">
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Duis eu ipsum ac neque porta dictum</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Etiam interdum massa vel eros faucibus</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Cras et felis convallis placerat augue at</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+            </section>
+            <!-- end `slat-list` component; -->
+          </div>
+          <div class="headline-slideshow__slide">
+            <!-- start `slat-list` component; -->
+            <section class="slat-list">
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Vestibulum vitae ligula id dolor rhon</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Nam bibendum leo tincidunt imperdiet vulputate</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Duis dapibus mauris sit amet justo sodales</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+            </section>
+            <!-- end `slat-list` component; -->
+          </div>
+        </div>
+      </section>
+      <!-- end `headline-slideshow` component; -->
+      <!-- start `headline-slideshow` component; -->
+      <section class="headline-slideshow">
+        <header>
+          <h2>Sports</h2>
+          <nav class="d-sm-inline"><a href="#">NFL</a><a href="#">NBA</a><a href="#">MLB</a><a href="#">NHL</a><a href="#">Golf</a><a href="#">Tennis</a><a href="#">Soccer</a>
+          </nav>
+        </header>
+        <div class="headline-slideshow__slides">
+          <div class="headline-slideshow__slide">
+            <!-- start `card` component; -->
+            <article class="card card--stacked"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/336x192" alt="empty placeholder image"></div>
+                <h3>Sed pellentesque erat vitae felis sagittis, vel porttitor nulla consequat</h3></a></article>
+            <!-- end `card` component; -->
+          </div>
+          <div class="headline-slideshow__slide">
+            <!-- start `slat-list` component; -->
+            <section class="slat-list">
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Mauris vitae sapien lacinia accumsan dui</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Curabitur dignissim est sagittis dolor luctus</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Proin in nulla vitae turpis congue veh</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+            </section>
+            <!-- end `slat-list` component; -->
+          </div>
+          <div class="headline-slideshow__slide">
+            <!-- start `card` component; -->
+            <article class="card card--stacked"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/336x192" alt="empty placeholder image"></div>
+                <h3>Praesent consectetur est sit amet ex bibendum lacinia</h3></a></article>
+            <!-- end `card` component; -->
+          </div>
+          <div class="headline-slideshow__slide">
+            <!-- start `slat-list` component; -->
+            <section class="slat-list">
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Integer posuere urna ullamcorper eros</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Maecenas volutpat sem vel vulputate vulputate</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+              <hr>
+              <!-- start `slat` component; -->
+              <article class="slat"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                  <div class="slat__text">
+                    <h3>Phasellus interdum turpis sit ametest</h3>
+                  </div></a></article>
+              <!-- end `slat` component; -->
+            </section>
+            <!-- end `slat-list` component; -->
+          </div>
+        </div>
+      </section>
+      <!-- end `headline-slideshow` component; -->
+    </main>
     <!-- start `page-footer` component; -->
-    <div class="page-footer">
-      <p>page-footer</p>
-    </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="img-cover"><img src="../images/page-footer/acme__logo.png" alt="empty placeholder image"></div>
+            <nav class="page-footer__social"><a href="#">
+                <svg class="icon-facebook">
+                  <title>Facebook</title>
+                  <use xlink:href="../images/icons/icons.svg#icon-facebook"></use>
+                </svg></a><a href="#">
+                <svg class="icon-twitter">
+                  <title>Twitter</title>
+                  <use xlink:href="../images/icons/icons.svg#icon-twitter"></use>
+                </svg></a><a href="#">
+                <svg class="icon-instagram">
+                  <title>Instagram</title>
+                  <use xlink:href="../images/icons/icons.svg#icon-instagram"></use>
+                </svg></a></nav><small class="page-footer__legal">&copy; 2019 ACME, a division of a Much Bigger Company Newtwork, LLC.</small>
+          </div>
+          <div class="col-12 col-sm-6 col-md-7 col-md-offset-1">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <nav class="page-footer__links"><br class="d-sm-none">
+                  <h3>Information</h3><a href="#">About Us</a><a href="#">Accessibility</a><a href="#">Corrections</a><a href="#">Press Room</a><a href="#">Advertise</a><a href="#">Jobs</a><a href="#">Developer's Network</a><a href="#">Terms of Service</a><a href="#">Privacy Notice</a><a href="#">Ad Choices</a><a href="#">Support</a>
+                </nav>
+              </div>
+              <div class="col-12 col-md-4">
+                <nav class="page-footer__links"><br class="d-md-none">
+                  <h3>Media Partners</h3><a href="#">Sports Weekly</a><a href="#">Education</a><a href="#">Grateful</a><a href="#">Studio</a><a href="#">Reviewed</a>
+                </nav>
+              </div>
+              <div class="col-12 col-md-4">
+                <nav class="page-footer__links"><br class="d-md-none">
+                  <h3>Stay Connected</h3><a href="#">Leave feedback</a><a href="#">Contact Us</a><a href="#">Staff</a><a href="#">Get Home Delivery</a><a href="#">Manage My Subscriptions</a><a href="#">Newsletters</a><a href="#">Podcasts</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- end `page-footer` component; -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../js/site.js"></script>
   </body>
 </html>

@@ -19,49 +19,587 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="">
     <meta property="og:description" content="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,500,700">
   </head>
   <body>
     <!-- start `skip-nav` component; -->
-    <div class="skip-nav">
-      <p>skip-nav</p>
-    </div>
+    <nav class="skip-nav"><a href="#main">Skip to main content</a></nav>
     <!-- end `skip-nav` component; -->
-    <!-- start `page-header` component; -->
-    <div class="page-header">
-      <p>page-header</p>
-    </div>
+    <!-- start `page-header` component;-->
+    <header class="page-header">
+      <div class="page-header__banner">
+        <div class="page-header__logo"><img src="../images/page-header/acme__logo.png" alt="ACME Logo"></div>
+      </div>
+    </header>
     <!-- end `page-header` component; -->
-    <!-- start `site-nav` component; -->
-    <div class="site-nav">
-      <p>site-nav</p>
-    </div>
+    <!-- start `site-nav` component;-->
+    <nav class="site-nav">
+      <button class="site-nav__button site-nav__button-icon site-nav__button-icon--open">
+        <svg class="icon-bars">
+          <title>Open Site Navigation Panel</title>
+          <use xlink:href="../images/icons/icons.svg#icon-bars"></use>
+        </svg>
+      </button>
+      <nav class="site-nav__drawer">
+        <div class="site-nav__section"><a href="#">Home</a>
+        </div>
+        <div class="site-nav__section">
+          <button class="site-nav__button site-nav__button-toggle"><span>Customer Service</span>
+            <svg class="icon-angle-down">
+              <use xlink:href="../images/icons/icons.svg#icon-angle-down"></use>
+            </svg>
+          </button>
+          <div class="site-nav__sub-sections">
+            <div class="site-nav__sub-section">
+              <p>SITE INFORMATION</p>
+              <div class="site-nav__links"><a href="#">Contact Us</a><a href="#">About Us</a><a href="#">Store</a><a href="#">RSS Feeds</a><a href="#">Special Sections</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>ADVERTISE</p>
+              <div class="site-nav__links"><a href="#">Advertise with Us</a><a href="#">Media Kit</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>MOBILE</p>
+              <div class="site-nav__links"><a href="#">Mobile Apps &amp; eReaders</a><a href="#">Newsletters</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>SOCIAL</p>
+              <div class="site-nav__links"><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">Instagram</a><a href="#">YouTube</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-nav__section">
+          <button class="site-nav__button site-nav__button-toggle"><span>News</span>
+            <svg class="icon-angle-down">
+              <use xlink:href="../images/icons/icons.svg#icon-angle-down"></use>
+            </svg>
+          </button>
+          <div class="site-nav__sub-sections">
+            <div class="site-nav__sub-section">
+              <p>SECTIONS</p>
+              <div class="site-nav__links"><a href="#">News</a><a href="#">Politics</a><a href="#">Weather</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>NATIONAL &amp; WORLD</p>
+              <div class="site-nav__links"><a href="#">National</a><a href="#">World</a><a href="#">Americas</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>LOCAL ISSUES</p>
+              <div class="site-nav__links"><a href="#">Crime</a><a href="#">Education</a><a href="#">Environment</a><a href="#">Traffic</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-nav__section">
+          <button class="site-nav__button site-nav__button-toggle"><span>Sports</span>
+            <svg class="icon-angle-down">
+              <use xlink:href="../images/icons/icons.svg#icon-angle-down"></use>
+            </svg>
+          </button>
+          <div class="site-nav__sub-sections">
+            <div class="site-nav__sub-section">
+              <p>SECTIONS</p>
+              <div class="site-nav__links"><a href="#">Sports</a><a href="#">Blogs &amp; Columnists</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>PRO &amp; COLLEGEs</p>
+              <div class="site-nav__links"><a href="#">Miami Dolphins</a><a href="#">Miami Heat</a><a href="#">Miami Marlins</a><a href="#">Florida Panthers</a><a href="#">College Sports</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>MORE SPORTS</p>
+              <div class="site-nav__links"><a href="#">High School Sports</a><a href="#">Auto Racing</a><a href="#">Fighting</a><a href="#">Golf</a><a href="#">Soccer</a><a href="#">Tennis</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-nav__section">
+          <button class="site-nav__button site-nav__button-toggle"><span>Politics</span>
+            <svg class="icon-angle-down">
+              <use xlink:href="../images/icons/icons.svg#icon-angle-down"></use>
+            </svg>
+          </button>
+          <div class="site-nav__links"><a href="#">Politics</a><a href="#">Elections</a>
+          </div>
+        </div>
+        <div class="site-nav__section">
+          <button class="site-nav__button site-nav__button-toggle"><span>Business</span>
+            <svg class="icon-angle-down">
+              <use xlink:href="../images/icons/icons.svg#icon-angle-down"></use>
+            </svg>
+          </button>
+          <div class="site-nav__links"><a href="#">Business</a><a href="#">Banking</a><a href="#">International Business</a><a href="#">Personal Finance</a><a href="#">Real Estate News</a>
+          </div>
+        </div>
+        <div class="site-nav__section">
+          <button class="site-nav__button site-nav__button-toggle"><span>Living</span>
+            <svg class="icon-angle-down">
+              <use xlink:href="../images/icons/icons.svg#icon-angle-down"></use>
+            </svg>
+          </button>
+          <div class="site-nav__sub-sections">
+            <div class="site-nav__sub-section">
+              <p>SECTIONS</p>
+              <div class="site-nav__links"><a href="#">Living</a><a href="#">Advice</a><a href="#">Fashion</a><a href="#">Health &amp; Fitness</a><a href="#">Home &amp; Garden</a><a href="#">Travel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-nav__section">
+          <button class="site-nav__button site-nav__button-toggle"><span>Entertainment</span>
+            <svg class="icon-angle-down">
+              <use xlink:href="../images/icons/icons.svg#icon-angle-down"></use>
+            </svg>
+          </button>
+          <div class="site-nav__sub-sections">
+            <div class="site-nav__sub-section">
+              <p>SECTIONS</p>
+              <div class="site-nav__links"><a href="#">Entertainment</a><a href="#">Books</a><a href="#">Games &amp; Puzzles</a><a href="#">Movies</a><a href="#">Performing Arts</a>
+              </div>
+            </div>
+            <div class="site-nav__sub-section">
+              <p>MORE ENTERTAINMENT</p>
+              <div class="site-nav__links"><a href="#">Events Calendar</a><a href="#">Contests &amp; Promotions</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="site-nav__button site-nav__button-icon site-nav__button-icon--close">
+          <svg class="icon-times">
+            <title>Close Site Navigation Panel</title>
+            <use xlink:href="../images/icons/icons.svg#icon-times"></use>
+          </svg>
+        </button>
+      </nav>
+    </nav>
     <!-- end `site-nav` component; -->
-    <!-- start `featured-stories` component; -->
-    <div class="featured-stories">
-      <p>featured-stories</p>
-    </div>
-    <!-- end `featured-stories` component; -->
-    <!-- start `headline-grid` component; -->
-    <div class="headline-grid">
-      <p>headline-grid</p>
-    </div>
-    <!-- end `headline-grid` component; -->
-    <!-- start `slat-list` component; -->
-    <div class="slat-list">
-      <p>slat-list</p>
-    </div>
-    <!-- end `slat-list` component; -->
-    <!-- start `photo-slideshow` component; -->
-    <div class="photo-slideshow">
-      <p>photo-slideshow</p>
-    </div>
-    <!-- end `photo-slideshow` component; -->
+    <main class="container" id="main">
+      <!-- start `featured-stories` component; -->
+      <div class="featured-stories">
+        <div class="row">
+          <div class="col-lg-6 col-md-8">
+            <!-- start `card` component; -->
+            <article class="card card--overlay card--featured-large"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/720x540" alt="empty placeholder image"></div>
+                <h1>Pellentesque in ligula et ante lobortis auctor nulla dictum mauris sit amet</h1></a></article>
+            <!-- end `card` component; -->
+          </div>
+          <div class="col-lg-2 d-none d-lg-block">
+            <!-- start `card` component; -->
+            <article class="card card--overlay card--featured-small d-none d-md-block"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/216x162" alt="empty placeholder image"></div>
+                <h2>In ornare diam sit amet consectetur</h2></a></article>
+            <!-- end `card` component; -->
+            <!-- start `card` component; -->
+            <article class="card card--overlay card--featured-small d-none d-md-block"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/216x162" alt="empty placeholder image"></div>
+                <h2>Cras tincidunt est eget leo elementum auctor</h2></a></article>
+            <!-- end `card` component; -->
+            <!-- start `card` component; -->
+            <article class="card card--overlay card--featured-small d-none d-md-block"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/216x162" alt="empty placeholder image"></div>
+                <h2>Integer id ipsum vel lect tempus faucibus</h2></a></article>
+            <!-- end `card` component; -->
+          </div>
+          <div class="col-md-4">
+            <section class="featured-stories__top"><br class="d-md-none">
+              <h2>Top Stories</h2><a class="d-lg-none" href="#">In ornare diam sit amet consectetur</a><a class="d-lg-none" href="#">Cras tincidunt est eget leo elementum auctor</a><a class="d-lg-none" href="#">Integer id ipsum vel lect tempus faucibus</a><a href="#">Quisque volutpat purus non mi volutpat, quis gravida urna malesuada</a><a href="#">Morbi aliquam ligula a tellus fermentum, sed faucibus dolor dignissim</a><a href="#">Duis eget ligula eu eros congue sollicitudin ac a arcu</a><a href="#">Mauris non magna ac leo faucibus malesuada</a><a href="#">Nulla euismod tellus vitae massa dictum, ut pellentesque mauris pulvinar</a><a href="#">Maecenas sit amet enim quis risus ultricies bibendum</a><a href="#">Ut volutpat ipsum at nisl maximus, a fermentum arcu condimentum</a><a href="#">Nunc ornare nunc vitae leo tristique dapibus</a><a href="#">Cras viverra justo ut congue efficitur</a><a href="#">Vivamus nec felis posuere, finibus lectus sit amet, fermentum magna</a><a href="#">Nunc accumsan tortor vitae dolor gravida, sit amet iaculis urna tincidunt</a><a href="#">Aenean sodales neque nec arcu iaculis finibus</a><a class="d-md-none d-lg-block" href="#">Phasellus consectetur orci et risus lobortis, ac egestas arcu interdum</a><a class="d-md-none d-lg-block" href="#">Mauris ultrices lorem at diam interdum, in porttitor velit tempus</a><a class="d-md-none d-lg-block" href="#">Nulla ut metus et nisl feugiat lacinia</a>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!-- end `featured-stories` component; -->
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <!-- start `headline-grid` component; -->
+          <section class="headline-grid">
+            <h2>Headlines</h2>
+            <p>Updated 2:38pm EDT</p>
+            <div class="headline-grid__stories">
+              <!-- start `card` component; -->
+              <article class="card card--overlay"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Curabitur in ligula viverra sagittis nunc et</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Ut ut nunc a odio blandit ultrices ac sed purus</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Vestibulum ut lectus sit amet tortor mollis</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Quisque vitae lacus non purus efficitur</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Mauris ut diam eu diam commodo ornare et</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Fusce ac leo eget lorem eleifend fringilla</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Maecenas volutpat augue sed elementum</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Sed quis diam a tortor tempor hendrerit</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Aliquam consectetur ipsum eget turpis</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Volutpat augue sed ele mentum maecenas</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay d-none d-lg-block"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Diam a tortor tempor hend rerit sed quis</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay d-none d-lg-block"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Ipsum eget turpis aliquam conse ctetur</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay d-none d-lg-block"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Cras sollicitudin sapien et odio venenatis</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay d-none d-lg-block"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Nulla interdum turpis sit amet feugiat faucibus</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay d-none d-lg-block"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Pellentesque laoreet urna non interdum egestas</h3></a></article>
+              <!-- end `card` component; -->
+              <!-- start `card` component; -->
+              <article class="card card--overlay d-none d-lg-block"><a href="#">
+                  <div class="img-cover"><img src="http://via.placeholder.com/240x240" alt="empty placeholder image"></div>
+                  <h3>Nam dignissim tortor at dui pulvinar quis viverra</h3></a></article>
+              <!-- end `card` component; -->
+            </div>
+          </section>
+          <!-- end `headline-grid` component; -->
+        </div>
+        <div class="col-12 col-md-4">
+          <!-- start `slat-list` component; -->
+          <section class="slat-list">
+            <h2 class="slat-list__title">Right Now</h2>
+            <!-- start `slat` component; -->
+            <article class="slat"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                <div class="slat__text">
+                  <div class="slat__kicker">NFL&nbsp;&nbsp;8min ago
+                  </div>
+                  <h3>Donec vehicula massa nec nisi vestibulum vulputate</h3>
+                </div></a></article>
+            <!-- end `slat` component; -->
+            <hr>
+            <!-- start `slat` component; -->
+            <article class="slat"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                <div class="slat__text">
+                  <div class="slat__kicker">NFL&nbsp;&nbsp;8min ago
+                  </div>
+                  <h3>Praesent hendrerit massa sit amet nulla bibendum</h3>
+                </div></a></article>
+            <!-- end `slat` component; -->
+            <hr>
+            <!-- start `slat` component; -->
+            <article class="slat"><a href="#">
+                <div class="slat__text">
+                  <div class="slat__kicker">NCAA&nbsp;&nbsp;8min ago
+                  </div>
+                  <h3>Vivamus vel turpis quis nunc aliquet interdum</h3>
+                </div></a></article>
+            <!-- end `slat` component; -->
+            <hr>
+            <!-- start `slat` component; -->
+            <article class="slat"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                <div class="slat__text">
+                  <div class="slat__kicker">Soccer&nbsp;&nbsp;8min ago
+                  </div>
+                  <h3>Integer vel sem vitae ligula semper auctoracsit</h3>
+                </div></a></article>
+            <!-- end `slat` component; -->
+            <hr>
+            <!-- start `slat` component; -->
+            <article class="slat"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                <div class="slat__text">
+                  <div class="slat__kicker">Golf&nbsp;&nbsp;8min ago
+                  </div>
+                  <h3>Nam placerat risus faucibus dui vehicula malesuada</h3>
+                </div></a></article>
+            <!-- end `slat` component; -->
+            <hr>
+            <!-- start `slat` component; -->
+            <article class="slat"><a href="#">
+                <div class="slat__text">
+                  <div class="slat__kicker">NFL&nbsp;&nbsp;8min ago
+                  </div>
+                  <h3>Vivamus nec lacus quis nulla venenatis viverra</h3>
+                </div></a></article>
+            <!-- end `slat` component; -->
+            <hr>
+            <!-- start `slat` component; -->
+            <article class="slat"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                <div class="slat__text">
+                  <div class="slat__kicker">NBA&nbsp;&nbsp;8min ago
+                  </div>
+                  <h3>Mauris placerat sem elementum leo molestie turpis</h3>
+                </div></a></article>
+            <!-- end `slat` component; -->
+            <hr>
+            <!-- start `slat` component; -->
+            <article class="slat"><a href="#">
+                <div class="img-cover"><img src="http://via.placeholder.com/72x72" alt="empty placeholder image"></div>
+                <div class="slat__text">
+                  <div class="slat__kicker">NCAA&nbsp;&nbsp;8min ago
+                  </div>
+                  <h3>Fusce lacinia nunc ac lectus sodales, sed pulvinar</h3>
+                </div></a></article>
+            <!-- end `slat` component; -->
+          </section>
+          <!-- end `slat-list` component; -->
+        </div>
+      </div>
+      <!-- start `photo-slideshow` component; -->
+      <div class="photo-slideshow d-none d-md-block">
+        <div class="slider photo-slideshow__for">
+          <div class="photo-slideshow__for-slide">
+            <div class="row">
+              <div class="col-8">
+                <div class="img-cover"><img src="http://via.placeholder.com/912x548" alt="empty placeholder image"></div>
+              </div>
+              <div class="col-4">
+                <h3>Curabitur faucibus massa dictum massa aliquam, at ultrices orci vulputate</h3>
+                <div class="photo-slideshow__for-description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum condimentum enim non placerat. Etiam cursus posuere accumsan. Curabitur sem libero, volutpat non congue at, molestie ac mauris. Vivamus eu porttitor libero, quis porttitor turpis. Etiam sodales nisl ut augue suscipit convallis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photo-slideshow__for-slide">
+            <div class="row">
+              <div class="col-8">
+                <div class="img-cover"><img src="http://via.placeholder.com/912x548" alt="empty placeholder image"></div>
+              </div>
+              <div class="col-4">
+                <h3>Maecenas mollis ipsum id nisi dictum congue</h3>
+                <div class="photo-slideshow__for-description"><p>Vestibulum velit orci, suscipit et nulla ullamcorper, efficitur blandit lacus. Suspendisse ligula metus, euismod quis mauris non, sollicitudin rutrum velit. Sed ullamcorper purus libero, vitae sollicitudin velit molestie in. Etiam porta urna sed lectus tristique viverra ut nec nisi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photo-slideshow__for-slide">
+            <div class="row">
+              <div class="col-8">
+                <div class="img-cover"><img src="http://via.placeholder.com/912x548" alt="empty placeholder image"></div>
+              </div>
+              <div class="col-4">
+                <h3>Cras tempor eros et arcu pretium convallis</h3>
+                <div class="photo-slideshow__for-description"><p>Suspendisse in vestibulum purus. Mauris sit amet congue nibh. Morbi non risus id tortor laoreet vestibulum. Vivamus sit amet augue augue. Aliquam ultrices tortor a nunc luctus, non mollis tortor vehicula. Integer et auctor quam. Maecenas non lacus rhoncus, condimentum diam viverra, pretium ipsum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photo-slideshow__for-slide">
+            <div class="row">
+              <div class="col-8">
+                <div class="img-cover"><img src="http://via.placeholder.com/912x548" alt="empty placeholder image"></div>
+              </div>
+              <div class="col-4">
+                <h3>Aenean eleifend turpis a ipsum euismod, ut faucibus libero sagittis</h3>
+                <div class="photo-slideshow__for-description"><p>Praesent neque dui, tincidunt ac egestas id, molestie non neque. Phasellus fermentum purus in molestie hendrerit. Ut ac lacinia orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque magna nunc, posuere at est sit amet, malesuada elementum justo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photo-slideshow__for-slide">
+            <div class="row">
+              <div class="col-8">
+                <div class="img-cover"><img src="http://via.placeholder.com/912x548" alt="empty placeholder image"></div>
+              </div>
+              <div class="col-4">
+                <h3>Ut placerat nunc et purus mollis malesuada</h3>
+                <div class="photo-slideshow__for-description"><p>Donec vestibulum venenatis ligula, ut lobortis massa convallis quis. Ut eu hendrerit lorem. Integer consectetur nisl id iaculis sagittis. Duis ut tristique dolor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photo-slideshow__for-slide">
+            <div class="row">
+              <div class="col-8">
+                <div class="img-cover"><img src="http://via.placeholder.com/912x548" alt="empty placeholder image"></div>
+              </div>
+              <div class="col-4">
+                <h3>Nullam pulvinar ante non mauris aliquet, ultricies posuere ipsum aliquam</h3>
+                <div class="photo-slideshow__for-description"><p>Curabitur est quam, laoreet id laoreet vitae, molestie et justo. Etiam vitae orci egestas, vestibulum felis eu, maximus risus. Duis ut urna pulvinar, rutrum diam vel, sagittis mi. Sed nulla ipsum, tristique in tincidunt at, elementum sed purus. Fusce bibendum rutrum est.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photo-slideshow__for-slide">
+            <div class="row">
+              <div class="col-8">
+                <div class="img-cover"><img src="http://via.placeholder.com/912x548" alt="empty placeholder image"></div>
+              </div>
+              <div class="col-4">
+                <h3>Ut maximus orci at iaculis interdum</h3>
+                <div class="photo-slideshow__for-description"><p>Cras laoreet gravida massa ut pharetra. Morbi volutpat neque sed turpis ultrices luctus. Donec accumsan ipsum ut tristique imperdiet. Aenean facilisis eu erat eget ultricies. Proin vitae mi id tortor imperdiet finibus ac vitae magna. Maecenas rhoncus convallis magna ut interdum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photo-slideshow__for-slide">
+            <div class="row">
+              <div class="col-8">
+                <div class="img-cover"><img src="http://via.placeholder.com/912x548" alt="empty placeholder image"></div>
+              </div>
+              <div class="col-4">
+                <h3>Cras malesuada mi quis tempus venenatis</h3>
+                <div class="photo-slideshow__for-description"><p>Fusce aliquam ex nec nulla ultricies luctus. Proin vestibulum in dolor eu rutrum. Duis sit amet euismod neque. Quisque et nulla metus. Curabitur vehicula neque id varius efficitur. Aliquam malesuada iaculis vulputate. Donec sed interdum dui.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photo-slideshow__for-slide">
+            <div class="row">
+              <div class="col-8">
+                <div class="img-cover"><img src="http://via.placeholder.com/912x548" alt="empty placeholder image"></div>
+              </div>
+              <div class="col-4">
+                <h3>Fusce vehicula mauris at eros feugiat, pharetra tincidunt justo luctus</h3>
+                <div class="photo-slideshow__for-description"><p>Maecenas sem mauris, porta ac bibendum vitae, hendrerit eu sapien. Maecenas mollis ullamcorper tincidunt. Integer posuere, tellus quis auctor fringilla, risus turpis gravida justo, id faucibus lectus turpis vel eros. Curabitur vel maximus ligula.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photo-slideshow__for-slide">
+            <div class="row">
+              <div class="col-8">
+                <div class="img-cover"><img src="http://via.placeholder.com/912x548" alt="empty placeholder image"></div>
+              </div>
+              <div class="col-4">
+                <h3>Maecenas quis odio quis nunc dapibus vulputate</h3>
+                <div class="photo-slideshow__for-description"><p>Donec pulvinar lacus mauris, quis laoreet nunc dignissim a. Cras dapibus arcu quis urna molestie porttitor. Integer orci urna, tristique in odio interdum, vulputate commodo dui. Nullam interdum, erat eget fermentum cursus, eros magna semper est, sed blandit diam ex id velit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="slider photo-slideshow__nav">
+              <div class="photo-slideshow__nav-slide">
+                <div class="img-cover"><img src="http://via.placeholder.com/128x96" alt="empty placeholder image"></div>
+              </div>
+              <div class="photo-slideshow__nav-slide">
+                <div class="img-cover"><img src="http://via.placeholder.com/128x96" alt="empty placeholder image"></div>
+              </div>
+              <div class="photo-slideshow__nav-slide">
+                <div class="img-cover"><img src="http://via.placeholder.com/128x96" alt="empty placeholder image"></div>
+              </div>
+              <div class="photo-slideshow__nav-slide">
+                <div class="img-cover"><img src="http://via.placeholder.com/128x96" alt="empty placeholder image"></div>
+              </div>
+              <div class="photo-slideshow__nav-slide">
+                <div class="img-cover"><img src="http://via.placeholder.com/128x96" alt="empty placeholder image"></div>
+              </div>
+              <div class="photo-slideshow__nav-slide">
+                <div class="img-cover"><img src="http://via.placeholder.com/128x96" alt="empty placeholder image"></div>
+              </div>
+              <div class="photo-slideshow__nav-slide">
+                <div class="img-cover"><img src="http://via.placeholder.com/128x96" alt="empty placeholder image"></div>
+              </div>
+              <div class="photo-slideshow__nav-slide">
+                <div class="img-cover"><img src="http://via.placeholder.com/128x96" alt="empty placeholder image"></div>
+              </div>
+              <div class="photo-slideshow__nav-slide">
+                <div class="img-cover"><img src="http://via.placeholder.com/128x96" alt="empty placeholder image"></div>
+              </div>
+              <div class="photo-slideshow__nav-slide">
+                <div class="img-cover"><img src="http://via.placeholder.com/128x96" alt="empty placeholder image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end `photo-slideshow` component; -->
+    </main>
     <!-- start `page-footer` component; -->
-    <div class="page-footer">
-      <p>page-footer</p>
-    </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="img-cover"><img src="../images/page-footer/acme__logo.png" alt="empty placeholder image"></div>
+            <nav class="page-footer__social"><a href="#">
+                <svg class="icon-facebook">
+                  <title>Facebook</title>
+                  <use xlink:href="../images/icons/icons.svg#icon-facebook"></use>
+                </svg></a><a href="#">
+                <svg class="icon-twitter">
+                  <title>Twitter</title>
+                  <use xlink:href="../images/icons/icons.svg#icon-twitter"></use>
+                </svg></a><a href="#">
+                <svg class="icon-instagram">
+                  <title>Instagram</title>
+                  <use xlink:href="../images/icons/icons.svg#icon-instagram"></use>
+                </svg></a></nav><small class="page-footer__legal">&copy; 2019 ACME, a division of a Much Bigger Company Newtwork, LLC.</small>
+          </div>
+          <div class="col-12 col-sm-6 col-md-7 col-md-offset-1">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <nav class="page-footer__links"><br class="d-sm-none">
+                  <h3>Information</h3><a href="#">About Us</a><a href="#">Accessibility</a><a href="#">Corrections</a><a href="#">Press Room</a><a href="#">Advertise</a><a href="#">Jobs</a><a href="#">Developer's Network</a><a href="#">Terms of Service</a><a href="#">Privacy Notice</a><a href="#">Ad Choices</a><a href="#">Support</a>
+                </nav>
+              </div>
+              <div class="col-12 col-md-4">
+                <nav class="page-footer__links"><br class="d-md-none">
+                  <h3>Media Partners</h3><a href="#">Sports Weekly</a><a href="#">Education</a><a href="#">Grateful</a><a href="#">Studio</a><a href="#">Reviewed</a>
+                </nav>
+              </div>
+              <div class="col-12 col-md-4">
+                <nav class="page-footer__links"><br class="d-md-none">
+                  <h3>Stay Connected</h3><a href="#">Leave feedback</a><a href="#">Contact Us</a><a href="#">Staff</a><a href="#">Get Home Delivery</a><a href="#">Manage My Subscriptions</a><a href="#">Newsletters</a><a href="#">Podcasts</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- end `page-footer` component; -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../js/site.js"></script>
   </body>
 </html>
