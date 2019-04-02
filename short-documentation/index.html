@@ -32,6 +32,7 @@
           <p>
             Short Documentation is an HTML template &amp; documentation project.
           </p>
+
           <p>
             The code organization and naming convention allow for a documentation build with minimal
             effort. Short Documentation uses
@@ -40,27 +41,41 @@
             folders as defined in the <code>JSON</code> file).
           </p>
 
-          <br />
-
           <p>
-            Here's all the examples in case you wanted to skip the documentation below. The links
-            are to the <code>dist</code> folder.
+            Here's all the example links in case you wanted to skip the documentation below.
           </p>
 
-          <ul>
+          <p>
+            <strong>Sample Project Templates:</strong>
+          </p>
+
+          <ul class="links">
             <li>
-              <a href="./project__initial/dist">Initialized project <code>dist</code></a>
+              <a href="./project__initial/dist"
+                ><img src="./project__initial--site.png" alt="Initialized project templates"
+              /></a>
             </li>
             <li>
-              <a href="./project__initial/dist/docs">Initialized project <code>docs</code></a>
+              <a href="./project__styled/dist"
+                ><img src="./project__styled--site.png" alt="Styled project templates"
+              /></a>
             </li>
           </ul>
-          <ul>
+
+          <p>
+            <strong>Sample Documentation:</strong>
+          </p>
+
+          <ul class="links">
             <li>
-              <a href="./project__styled/dist">Styled project <code>dist</code></a>
+              <a href="./project__initial/dist/docs"
+                ><img src="./project__initial--docs.png" alt="Initialized project docs"
+              /></a>
             </li>
             <li>
-              <a href="./project__styled/dist/docs">Styled project <code>docs</code></a>
+              <a href="./project__styled/dist/docs"
+                ><img src="./project__styled--docs.png" alt="Styled project docs"
+              /></a>
             </li>
           </ul>
         </div>
@@ -142,6 +157,7 @@
               <code>JSON</code> file should save you significant time at the beginning of each
               project by creating most of the files and folders you need, and linking them together.
             </p>
+
             <p>
               See the comments in the code block below for how to build the configuration file.
             </p>
@@ -202,12 +218,17 @@
               Congratulations, your Short Documentation project has been built. Below is a link to
               the project looks after the generator has run:
             </p>
-            <ul>
+
+            <ul class="links">
               <li>
-                <a href="./project__initial/dist/">Initialized project <code>dist</code></a>
+                <a href="./project__initial/dist"
+                  ><img src="./project__initial--site.png" alt="Initialized project templates"
+                /></a>
               </li>
               <li>
-                <a href="./project__initial/dist/docs/">Initialized project <code>docs</code></a>
+                <a href="./project__initial/dist/docs"
+                  ><img src="./project__initial--docs.png" alt="Initialized project docs"
+                /></a>
               </li>
             </ul>
           </div>
@@ -222,14 +243,20 @@
             Here is an example of how the Short Documentation project looks after all the components
             and templates have been styled for a mock ACME company website:
           </p>
-          <ul>
+
+          <ul class="links">
             <li>
-              <a href="./project__styled/dist/">Styled project <code>dist</code></a>
+              <a href="./project__styled/dist"
+                ><img src="./project__styled--site.png" alt="Styled project dist"
+              /></a>
             </li>
             <li>
-              <a href="./project__styled/dist/docs/">Styled project <code>docs</code></a>
+              <a href="./project__styled/dist/docs"
+                ><img src="./project__styled--docs.png" alt="Styled project docs"
+              /></a>
             </li>
           </ul>
+
           <p>
             Thank you
             <a href="http://acmelogos.com/">acmelogos.com</a> for the logo.
@@ -271,6 +298,7 @@ $ npm start server docs     # build the project with documentation, a web server
               <code>README.md</code> is not just a markdown file, it contains some YAML at the top
               to configure the display of the component or template.
             </p>
+
             <p>
               The YAML and Markdown are separated by Node. The YAML is used to configure the
               documentation navigation and page, the Markdown is content on the documentation page.

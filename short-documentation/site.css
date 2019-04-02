@@ -161,6 +161,34 @@ h3::before {
   margin-left: 16px;
 }
 
+/* screenshots */
+.links {
+  display: flex;
+  list-style: none;
+  margin-left: 0;
+}
+.links li {
+  width: 192px;
+  margin-right: 24px;
+}
+.links img {
+  width: 192px;
+  height: 144px;
+  display: block;
+  transition: opacity 0.5s;
+  outline: 4px solid #cf3149;
+}
+.links a {
+  background: #313149;
+  display: block;
+  border: 0;
+}
+.links a:hover img,
+.links a:focus img {
+  opacity: 0.9;
+  outline-color: #0054ad;
+}
+
 /* content containers; */
 @media (min-width: 1024px) {
   .content--rich-text,
