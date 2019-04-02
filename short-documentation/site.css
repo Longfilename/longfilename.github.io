@@ -98,6 +98,7 @@ h3 {
 @media (min-width: 1024px) {
   h2,
   h3 {
+    position: -webkit-sticky;
     position: sticky;
   }
 }
