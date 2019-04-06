@@ -1,5 +1,5 @@
 {
-  "next": "/json/search-results/search-results-2.json",
+  "next": "../json/search-results/search-results-2.json",
   "stories": [
     {
       "img": "http://via.placeholder.com/320x320",
