@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="nofollow" />
+    <meta
+      name="description"
+      content="Homepage for the LONGFILENAME repository. https://github.com/longfilename"
+    />
+
+    <title>Longfilename</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto Mono", monospace;
+        line-height: 24px;
+        font-size: 16px;
+      }
+
+      .debug-grid::before {
+        content: "";
+        display: block;
+        background-size: 24px 24px;
+        background-image: linear-gradient(to bottom, lightblue 1px, transparent 1px),
+          linear-gradient(to right, lightblue 1px, transparent 1px);
+        background-position: 0 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+      }
+
+      main {
+        max-width: 480px;
+        margin: 24px 48px;
+      }
+
+      h2 {
+        margin-top: 48px;
+        background: lightblue;
+        outline: 8px solid lightblue;
+      }
+
+      h2 + * {
+        margin-top: 24px;
+      }
+
+      blockquote {
+        padding: 12px 24px;
+        border-left: 1px solid black;
+        margin-left: -24px;
+      }
+
+      blockquote p {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="debug-grid"></div>
+
+    <main>
+      <h1>longfilename.github.io</h1>
+
+      <p>
+        Below is a sampling of the projects and experiments housed in the
+        <a href="https://github.com/longfilename">longfilename repository</a>.
+      </p>
+
+      <h2>Project: <a href="./short-documentation/">Short Documentation</a></h2>
+      <p>
+        Many moons ago, this project started as a ColdFusion application that would generate a
+        project outline based on a JSON configuration file.
+      </p>
+      <p>
+        Currently it is a Yeoman generator that will generate a project outline based on a JSON
+        configuration file, <strong>and</strong> documentation will be auo-generated based on the
+        components and templates.
+      </p>
+
+      <h2>Experiment: <a href="./chord/">Chord</a></h2>
+      <blockquote cite="https://en.wikipedia.org/wiki/Chord_(geometry)">
+        <p>
+          A chord of a circle is a straight line segment whose endpoints both lie on the circle.
+        </p>
+      </blockquote>
+      <p>
+        I ran across a JAR file online that contained this animation. I found it captivating, and
+        recreated it in HTML/CSS/JS.
+      </p>
+
+      <h2>Experiment: <a href="./circles/">Circles</a></h2>
+      <p>I saw this in an animated GIF. I had to rebuild it when I saw it.</p>
+    </main>
+  </body>
+</html>

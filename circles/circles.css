@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+  padding: 50px;
+  font: 14px/1.4 sans-serif;
+}
+
+div.controls {
+  position: absolute;
+  top: 200px;
+  left: 740px;
+  background: rgba(255, 255, 255, 0.5);
+  width: 185px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+div.controls h1 {
+  margin-top: 1em;
+  font-size: 14px;
+}
+
+div.controls h1:first-child {
+  margin-top: 0;
+}
+
+div.controls label {
+  display: block;
+  cursor: pointer;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding-top: 3px;
+  margin-top: 3px;
+}
+
+div.circle-container {
+  position: relative;
+  width: 640px;
+  height: 640px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 320px;
+  box-sizing: border-box;
+}
+
+div.circle {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  width: 320px;
+  height: 320px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+div.circle a {
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: #fff;
+  z-index: 2;
+  box-shadow: 0 0 10px #333333;
+}
+
+div.circle.hidden {
+  opacity: 0;
+}
+
+div.circle.north {
+  top: 0;
+  left: 25%;
+}
+
+div.circle.north a {
+  top: 0;
+  left: 50%;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+div.circle.south {
+  bottom: 0;
+  left: 25%;
+}
+
+div.circle.south a {
+  bottom: 0;
+  left: 50%;
+  margin-bottom: -8px;
+  margin-left: -8px;
+}
+
+div.circle.east {
+  top: 25%;
+  right: 0;
+}
+
+div.circle.east a {
+  top: 50%;
+  left: 0;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+div.circle.west {
+  top: 25%;
+  left: 0;
+}
+
+div.circle.west a {
+  top: 50%;
+  right: 0;
+  margin-top: -8px;
+  margin-right: -8px;
+}
+
+div.circle.northeast {
+  top: 7.2%;
+  right: 7.2%;
+}
+
+div.circle.northeast a {
+  top: 11.85%;
+  right: 83.25%;
+}
+
+div.circle.northwest {
+  top: 7.2%;
+  left: 7.2%;
+}
+
+div.circle.northwest a {
+  top: 11.85%;
+  left: 83.25%;
+}
+
+div.circle.southeast {
+  bottom: 7.2%;
+  right: 7.2%;
+}
+
+div.circle.southeast a {
+  bottom: 11.85%;
+  right: 83.25%;
+}
+
+div.circle.southwest {
+  bottom: 7.2%;
+  left: 7.2%;
+}
+
+div.circle.southwest a {
+  bottom: 11.85%;
+  left: 83.25%;
+}
+
+body.animate-container div.circle-container {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 8s;
+  animation-name: counter-clockwise;
+}
+
+body.animate-circles div.circle {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-name: clockwise;
+}
+
+@-moz-keyframes clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes counter-clockwise {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes counter-clockwise {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-o-keyframes counter-clockwise {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-ms-keyframes counter-clockwise {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes counter-clockwise {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
